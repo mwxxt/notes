@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 ]
 
 REST_FRAMEWORK = {
+    'DATETIME_FORMAT': '%d.%m.%Y %H:%M',
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
     ]
@@ -118,7 +119,10 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+# DATE_FORMAT = 'd.m.Y'
+# TIME_FORMAT = 'H:i'
+
+TIME_ZONE = 'Asia/Bishkek'
 
 USE_I18N = True
 
